@@ -5,6 +5,7 @@
   .about_us{
     .title_abut{
       @include title_ab;
+      text-transform: capitalize;
     }
     .about_text{
       padding-top: 30px;

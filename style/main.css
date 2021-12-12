@@ -936,6 +936,7 @@ html[dir="ltr"] footer .newslatter .input_div .btn_newsla {
   color: #ffffff;
   font-weight: 700;
   margin-bottom: 45px;
+  text-transform: capitalize;
 }
 
 .about_Us_parant .about_us .title_abut:after {
