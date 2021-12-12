@@ -1183,6 +1183,11 @@ html[dir="ltr"] footer .newslatter .input_div .btn_newsla {
         flex-wrap: wrap;
     padding: 40px 0;
   }
+  .counter_ .coun_div {
+    width: 50% !important;
+    -webkit-margin-before: 15px;
+            margin-block-start: 15px;
+  }
   .counter_ .coun_div .counter, .counter_parant .counter_ .coun_div .Postive_::after, .counter_parant .counter_ .coun_div .Rate_::after {
     font-size: 40px !important;
   }

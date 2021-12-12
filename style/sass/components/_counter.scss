@@ -40,6 +40,8 @@
     flex-wrap: wrap;
     padding: 40px 0;
     .coun_div{
+      width: 50%!important;
+      margin-block-start: 15px;
       .counter{
         font-size: 40px!important;
       }
