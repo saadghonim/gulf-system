@@ -395,6 +395,7 @@ header .nav_parant_ nav .lang {
   color: #2f466e;
   cursor: pointer;
   position: relative;
+  text-transform: capitalize;
 }
 
 header .nav_parant_ nav .lang img {

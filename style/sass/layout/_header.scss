@@ -97,6 +97,7 @@ header{
         color: $main_color;
         cursor: pointer;
         position: relative;
+        text-transform: capitalize;
     
         img{
           margin-inline-end: 5px;
