@@ -1,0 +1,52 @@
+.Our_services_parant{
+  padding: 100px 0 40px;
+  .title_abut{
+    @include title_main;
+  }
+  .ser_div{
+    text-align: center;
+    display: block;
+    margin-bottom: 70px;
+    .div_icon{
+      @include d_flex_c;
+      width: 71px;
+      height: 71px;
+      border-radius: 10px;
+      background-color: $color_1 ;
+      margin:0 auto 20px;
+      
+      img{
+        max-width: 100%;
+      }
+    }
+    .ser_t{
+      font-size: $font_s + 2;
+      color: $color_1;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .ser_p{
+      font-size: $font_s;
+      color: $color_4;
+      text-align: justify;
+      text-align-last: center;
+      font-weight: 400;
+    }
+  }
+  @include xs{
+    .ser_div{
+      margin-bottom: 35px;
+      .ser_p{
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+    }
+    .title_abut{
+      margin-bottom: 50px;
+    }
+    
+  }
+}
+

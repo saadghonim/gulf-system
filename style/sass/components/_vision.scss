@@ -1,0 +1,37 @@
+.vision_parant{
+  background-color: $color_3;
+  padding: 85px 0;
+    .vision_div{
+      position: relative;
+      text-align:center;
+      background-color: $main_color;
+      padding: 30px 20px;
+      z-index: 1;
+      h5{
+        @include title_main;
+        font-size: $font_s + 2;
+        font-weight: 500;
+        margin-bottom: 30px;
+      }
+      P{
+        font-size: $font_s;
+        color: $color_4;
+        font-weight: 400;
+      }
+      .img_posi{
+        position: absolute;
+        transform: translatey(-50%);
+        top: 50%;
+        z-index: -1;
+        left: 20px;
+      }
+    }
+}
+@include xs{
+.vision_parant{
+  padding: 50px 0;
+  .vision_div{
+    margin-bottom: 15px;
+  }
+}
+}

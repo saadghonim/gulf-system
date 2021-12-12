@@ -1,0 +1,100 @@
+
+.about_Us_parant{
+  background-color: $color_3;
+  padding: 90px 0;
+  .about_us{
+    .title_abut{
+      @include title_ab;
+    }
+    .about_text{
+      padding-top: 30px;
+      text-align: start;
+        .title_abut{
+          font-size: 25px;
+          color: $color_1;
+          font-weight: 700;
+          margin-bottom: 45px;
+            &:after{
+            content: " ";
+            width: 31px;
+            height: 2px;
+            background-color: $color_2;
+            display: block;
+            position: absolute;
+            margin-top: 15px;
+            
+          }
+        }
+        .p_about{
+          font-size: $font_s;
+          color: $color_4;
+          font-weight: 500;
+          margin-bottom: 30px;
+          width: 80%;
+        }
+        .btn_slider{
+          @include btn_gh;
+          width: 150px;
+          height: 45px;
+          background-color: $color_2;
+          color: $main_color;
+          &:hover{
+            transform: translateY(-5px);
+            background-color: $main_color;
+            color: $color_1
+          }
+        }
+        
+    }
+    @include xs {
+        .about_text{
+          width: 100%;
+          text-align: center;
+          h1{
+            display: none;
+            font-size: 22;
+          }
+          .p_about {
+            font-size: $font_s;
+            margin-bottom: 20px;
+            text-align: center;
+            width: 100%;
+          }
+          .btn_slider{
+            width: 140px;
+            height: 38px;
+            margin:auto;
+          }
+        }
+  }
+    .about_img{
+      position: relative;
+      padding-bottom: 54.77477477477477%;
+      img{
+        max-width: 100%;
+        @include acpict_r;
+      }
+    }
+  }
+
+}
+@include xs{
+  .about_Us_parant{
+    padding: 50px 0;
+  }
+  .about_text{
+    .p_about{
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+  .title_abut{
+    text-align: center;
+    &::after{
+      transform: translateX(-50%);
+      left: 50%;
+    }
+  }
+}

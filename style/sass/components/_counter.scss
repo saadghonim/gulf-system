@@ -1,0 +1,48 @@
+.counter_parant{
+  background-color: $color_2;
+  .counter_{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    .coun_div{
+      width: 100%;
+      text-align:center;
+        .counter{
+          font-size: 48px;
+          color: $main_color;
+          font-weight: 700;
+        }
+        .Postive_{
+          &::after{
+            content: "+";
+            @extend .counter;
+          }
+        }
+        .Rate_{
+          &::after{
+            content: "%";
+            @extend .counter;
+          }
+        }
+        h3{
+          font-size: 22px;
+          font-weight:500 ;
+          color: $main_color;
+        }
+    }
+  }
+
+}
+
+@include xs{
+  .counter_{
+  justify-content: inherit;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    .coun_div{
+      .counter{
+        font-size: 40px!important;
+      }
+    }
+  }
+}
