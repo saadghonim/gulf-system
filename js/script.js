@@ -109,11 +109,11 @@ $( document ).ready(function(){
 
 
 
-// $(window).on("load",function() {
-//   $(".pop_up_parant").fadeIn('500')
-//   $(".moboverlay").fadeIn("500");
+$(window).on("load",function() {
+  $(".pop_up_parant").fadeIn('500')
+  $(".moboverlay").fadeIn("500");
 
-// });
+});
 $(".linear_").on("click",function(){
   $(".moboverlay").fadeOut("500");
   $(".pop_up_parant").hide('500')
