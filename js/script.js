@@ -105,6 +105,20 @@ $( document ).ready(function(){
         }
     }
 }) 
+
+// ~~~~~~~~~~btn_up~~~~~~~~~~~~~~
+$(window).scroll(function(){
+  if ($(this).scrollTop() > 500) {
+      $('.btn_up').fadeIn();
+  } else {
+      $('.btn_up').fadeOut();
+  }
+});
+
+$('.btn_up').click(function(){
+  $('html, body').animate({scrollTop : 0},800);
+  return false;
+});
 });
 
 
@@ -124,3 +138,9 @@ $(".moboverlay").on("click",function(){
   $(".pop_up_parant").hide('500')
 
 })
+
+
+
+
+
+

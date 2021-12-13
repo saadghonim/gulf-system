@@ -205,3 +205,47 @@ footer{
     }
   }
 }
+
+
+// ~~~~~~~~~~~~~~~btnUP
+.btn_up{
+  position: fixed;
+  bottom: 70px;
+  font-size: $font_s + 2;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: $color_3;
+  color: $color_1;
+  display: none;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include ar{
+    right: 40px;
+
+  }
+  @include en{
+    left: 40px;
+  }
+      &:hover{
+        background-color: $color_2;
+        color: $main_color;
+    }
+}
+@include xs{
+  .btn_up{
+    bottom: 70px;
+    right: 40px;
+    width: 43px;
+    height: 43px;
+    font-size: $font_s - 2;
+    @include ar{
+      right: 15px;
+    }
+    @include en{
+      left: 15px;
+    }
+  }
+}
