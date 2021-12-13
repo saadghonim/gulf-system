@@ -744,10 +744,10 @@ html[dir="ltr"] footer .newslatter .input_div .btn_newsla {
             margin-inline-start: 15px;
   }
   footer .f_div .ul_list li:last-child {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   footer .f_div .ul_list li:first-child {
-    margin-top: -12px;
+    margin-top: -9px;
   }
 }
 
@@ -1136,6 +1136,11 @@ html[dir="ltr"] .slider_parant .slider .slide_text_parant .slide_text {
   color: #d0a809;
 }
 
+.Our_services_parant .ser_div:hover .div_icon img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .Our_services_parant .ser_div .div_icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1151,10 +1156,13 @@ html[dir="ltr"] .slider_parant .slider .slide_text_parant .slide_text {
   border-radius: 10px;
   background-color: #ffffff;
   margin: 0 auto 20px;
+  overflow: hidden;
 }
 
 .Our_services_parant .ser_div .div_icon img {
   max-width: 100%;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .Our_services_parant .ser_div .ser_t {
