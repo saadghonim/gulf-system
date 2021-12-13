@@ -72,13 +72,19 @@
               color: $main_color;
             }
           }
-          
+          @include ar{
+            float: right;
+          }
+          @include en{
+            float: left;
+          }
       }
     }
 
     // ~~~~~~~~~~~~~media_mobile~~~~~~~~~~~~~~~~~~~~~~~~~~
     @include xxs {
       .slide_text_parant{
+        text-align: start;
         .slide_text{
           h1{
             font-size: 22px;

@@ -11,7 +11,17 @@
     max-width: 770px;
     margin: auto;
     padding: 30px 0 30px;
-
+    .pop_backgr{
+      position: absolute;
+      bottom: 0;
+      @include ar{
+        left: 0;
+      }
+      @include en{
+        right: 0;
+        transform: scaleX(-1);
+      }
+    }
     .pop_up{
         .logo{
           padding: 35px 35px 30px 35px;
@@ -64,14 +74,10 @@
   .pop_up_parant{
     height: auto;
     padding-bottom: 30px;
+    .pop_backgr{
+      display: none;
+    }
     .pop_up{
-    position: relative;
-
-      .pop_backgr{
-        position: absolute;
-        top: 0;
-        
-      }
       .logo{
         padding: 20px ;
   
