@@ -1621,6 +1621,13 @@ html[dir="ltr"] .slider_parant .slider .slide_text_parant .slide_text {
     height: auto;
     padding-bottom: 30px;
   }
+  .pop_up_parant .pop_up {
+    position: relative;
+  }
+  .pop_up_parant .pop_up .pop_backgr {
+    position: absolute;
+    top: 0;
+  }
   .pop_up_parant .pop_up .logo {
     padding: 20px;
   }
