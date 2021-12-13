@@ -1118,10 +1118,22 @@ html[dir="ltr"] .slider_parant .slider .slide_text_parant .slide_text {
   margin-top: 15px;
 }
 
+.Our_services_parant .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .Our_services_parant .ser_div {
   text-align: center;
   display: block;
   margin-bottom: 70px;
+}
+
+.Our_services_parant .ser_div:hover .ser_t {
+  color: #d0a809;
 }
 
 .Our_services_parant .ser_div .div_icon {
@@ -1150,6 +1162,7 @@ html[dir="ltr"] .slider_parant .slider .slide_text_parant .slide_text {
   color: #ffffff;
   font-weight: 700;
   margin-bottom: 20px;
+  text-transform: capitalize;
 }
 
 .Our_services_parant .ser_div .ser_p {
@@ -1401,7 +1414,7 @@ html[dir="ltr"] .slider_parant .slider .slide_text_parant .slide_text {
     padding: 50px 0 40px;
   }
   .team_parant .owl-dots {
-    bottom: -13px;
+    bottom: -15px;
   }
   .team_parant .title_abut {
     margin-bottom: 50px;
@@ -1535,7 +1548,7 @@ html[dir="ltr"] .slider_parant .slider .slide_text_parant .slide_text {
     padding: 50px 0 60px;
   }
   .news_parant .owl-dots {
-    bottom: -45px;
+    bottom: -37px;
   }
   .news_parant .owl-dots .active {
     background-color: #d0a809;

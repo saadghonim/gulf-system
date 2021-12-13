@@ -3,10 +3,19 @@
   .title_abut{
     @include title_main;
   }
+  .row{
+    display: flex;
+    justify-content: space-around;
+  }
   .ser_div{
     text-align: center;
     display: block;
     margin-bottom: 70px;
+    &:hover{
+      .ser_t{
+        color: $color_2;
+      }
+    }
     .div_icon{
       @include d_flex_c;
       width: 71px;
@@ -24,6 +33,7 @@
       color: $color_1;
       font-weight: 700;
       margin-bottom: 20px;
+      text-transform: capitalize;
     }
     .ser_p{
       font-size: $font_s;
