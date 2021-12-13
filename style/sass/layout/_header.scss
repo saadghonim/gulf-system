@@ -97,7 +97,7 @@ header{
         color: $main_color;
         cursor: pointer;
         position: relative;
-        text-transform: capitalize;
+        text-transform: center;
     
         img{
           margin-inline-end: 5px;
@@ -138,12 +138,12 @@ header{
         }
       } 
       @include xs {
-        background-color: $color_1;
+        background-color: $main_color;
           display: none;
           position: absolute;
           top: 0;
           right: 0;
-          width: 85%;
+          width: 100%;
           height: 100%;
           padding: 100px 20px 0;
           z-index: 99;
@@ -154,7 +154,7 @@ header{
             display: block;
             position: absolute;
             top: 30px;
-            color: $main_color;
+            color: $color_1;
             font-size: $font_s;
             cursor: pointer;
             transition: .5s;
@@ -177,11 +177,16 @@ header{
             a{
               margin-inline-end: 0;
               margin-bottom: 15px;
+              color: $color_1;
+              &:hover{
+                color: $color_2;
+              }
             }
           }
           .lang{
             position: absolute;
             top: 30px;
+            color: $color_1;
             @include ar{
               right: 20px;
             }

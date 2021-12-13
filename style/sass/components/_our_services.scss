@@ -35,7 +35,13 @@
   }
   @include xs{
     .ser_div{
-      margin-bottom: 35px;
+      margin-bottom: 50px;
+      .div_icon{
+        margin-bottom: 15px;
+      }
+      .ser_t{
+        margin-bottom: 15px;
+      }
       .ser_p{
         display: -webkit-box;
         -webkit-line-clamp: 3;

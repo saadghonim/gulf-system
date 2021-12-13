@@ -74,7 +74,6 @@
   z-index: 1;
 }
 @mixin btn_gh{
-  width: $width_btn;
   height: $height_btn;
   font-size: $font_s;
   font-weight: 600;
@@ -135,11 +134,13 @@
       font-size: 15px;
       line-height: 3.273;
       font-weight: 900;
-      left: 15px;
       transition: .5s;
-    }
-    @include en{
-      right: 15px;
+      @include ar{
+        left: 15px;
+      }
+      @include en{
+        right: 15px;
+      }
     }
     &[aria-expanded="true"]::after{
       content: "\f106";

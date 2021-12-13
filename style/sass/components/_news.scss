@@ -3,10 +3,11 @@
   background-color: $color_3;
   h1{
     @include title_main;
+    text-transform: capitalize
   }
   @include dots_;
   .owl-dots{
-    bottom: -70px;
+    bottom: -55px;
     .active{
       background-color: $color_2;
 
@@ -31,12 +32,16 @@
 
       }
     }
-    h3{
+    a{
       font-size: $font_s + 2;
       color: $color_1;
       text-align: start;
       margin-bottom: 15px;
-
+      text-transform: capitalize;
+      transition: .5s;
+      &:hover{
+        color: $color_2;
+      }
     }
     p{
       font-size: $font_s;
@@ -48,7 +53,14 @@
 
 @include xs{
   .news_parant{
-    padding: 50px 0 40px;
+    padding: 50px 0 60px;
+    .owl-dots{
+      bottom: -45px;
+      .active{
+        background-color: $color_2;
+  
+      }
+    }
     h1{
       margin-bottom: 50px;
     }

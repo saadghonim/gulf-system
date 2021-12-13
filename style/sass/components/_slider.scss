@@ -20,51 +20,66 @@
       }
     }
     // ~~~~~~~~~~~~~~text slider~~~~~~~~~~~
-    .slide_text{
+    .slide_text_parant{
+      width: 100%;
+      height: auto;
+      overflow: hidden;
       position: absolute;
       transform: translateY(-50%);
       top: 50%;
-      text-align: start;
-      width: 37%;
-      z-index: 1;
-        h1{
-          font-size: 48px;
-          color: $main_color;
-          font-weight: 700;
-          margin-bottom: 45px;
-            &:after{
-            content: " ";
-            width: 114px;
-            height: 2px;
-            background-color: $color_2;
-            display: block;
-            position: absolute;
-            margin-top: 15px;
-            
-          }
+      right: 0;
+      .slide_text{
+        z-index: 1;
+        text-align: start;
+        @include ar{
+          direction: rtl;
         }
-        .p_slide{
-          font-size: 24px;
-          color: $main_color;
-          font-weight: 500;
-          margin-bottom: 30px;
+        @include en{
+          direction: ltr;
         }
-        .btn_slider{
-          @include btn_gh;
-          background-color: $main_color;
-          color: $color_1;
-          &:hover{
-            transform: translateY(-5px);
-            background-color: $color_2 ;
+          h1{
+            font-size: 48px;
             color: $main_color;
+            font-weight: 700;
+            margin-bottom: 45px;
+              &:after{
+              content: " ";
+              width: 114px;
+              height: 2px;
+              background-color: $color_2;
+              display: block;
+              position: absolute;
+              margin-top: 15px;
+              
+            }
           }
-        }
-        
+          .p_slide{
+            font-size: 24px;
+            color: $main_color;
+            font-weight: 500;
+            margin-bottom: 30px;
+            width: 55%
+          }
+          .btn_slider{
+            @include btn_gh;
+            background-color: $main_color;
+            color: $color_1;
+            min-width: 165px;
+            padding: 0 10px;
+            &:hover{
+              transform: translateY(-5px);
+              background-color: $color_2 ;
+              color: $main_color;
+            }
+          }
+          
+      }
     }
+
     // ~~~~~~~~~~~~~media_mobile~~~~~~~~~~~~~~~~~~~~~~~~~~
     @include xxs {
+      .slide_text_parant{
         .slide_text{
-          width: 90%;
           h1{
             font-size: 22px;
             margin-bottom: 10px;
@@ -78,22 +93,26 @@
           .p_slide {
             font-size: $font_s;
             margin-bottom: 10px;
+            width: 90%;
+
           }
           .btn_slider{
-            width: 135px;
             height: 35px;
           }
         }
+      }
     }
     @include xs{
-      .slide_text{
-        width: 68%;
-        .p_slide{
-          display: -webkit-box;
-          -webkit-line-clamp: 2;
-          -webkit-box-orient: vertical;
-          overflow: hidden;
-          margin-bottom: 20px;
+      .slide_text_parant{
+        .slide_text{
+          width: 68%;
+          .p_slide{
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            margin-bottom: 20px;
+          }
         }
       }
       .anc_slider{
