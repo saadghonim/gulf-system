@@ -29,8 +29,8 @@ $( document ).ready(function(){
   $('.slider .owl-carousel').owlCarousel({
     loop:true,
     nav:false,
-    // autoplay:true,
-    rtl:true,
+    autoplay:true,
+    rtl: $("html").attr("dir") == "rtl" ? true : false,
     responsive:{
         0:{
             items:1
@@ -70,8 +70,8 @@ $( document ).ready(function(){
     loop:true,
     nav:false,
     margin: 30,
-    // autoplay:true,
-    rtl:true,
+    rtl: $("html").attr("dir") == "rtl" ? true : false,
+    autoplay:true,
     responsive:{
         0:{
             items:1
@@ -90,7 +90,7 @@ $( document ).ready(function(){
     loop:true,
     margin:30,
     nav:false,
-    rtl:true,
+    rtl: $("html").attr("dir") == "rtl" ? true : false,
     responsive:{
         0:{
     margin:15,

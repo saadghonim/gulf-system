@@ -1585,11 +1585,11 @@ html[dir="ltr"] .slider_parant .slider .slide_text_parant .slide_text {
 .news_parant .news_div a {
   font-size: 18px;
   color: #ffffff;
-  text-align: start;
   margin-bottom: 15px;
   text-transform: capitalize;
   -webkit-transition: .5s;
   transition: .5s;
+  text-align: start;
 }
 
 .news_parant .news_div a:hover {
@@ -1633,7 +1633,6 @@ html[dir="ltr"] .slider_parant .slider .slide_text_parant .slide_text {
   z-index: 1000;
   display: none;
   background-color: #2f466e;
-  border-radius: 35px;
   width: calc(100% - 30px);
   max-width: 770px;
   margin: auto;

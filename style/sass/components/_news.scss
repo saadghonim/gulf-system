@@ -35,10 +35,10 @@
     a{
       font-size: $font_s + 2;
       color: $color_1;
-      text-align: start;
       margin-bottom: 15px;
       text-transform: capitalize;
       transition: .5s;
+      text-align: start;
       &:hover{
         color: $color_2;
       }
